@@ -464,7 +464,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../../../Program Files/KiCad/8.0/share/doc/kicad/tutorials/",
       "plot": "C:/Users/Danie/Documents/Github/projekt/corne-keyboard-build/cad/",
       "pos_files": "",
       "specctra_dsn": "",
