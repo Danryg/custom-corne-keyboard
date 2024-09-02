@@ -45,10 +45,10 @@
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
@@ -71,12 +71,12 @@
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "C:/Users/Danie/Documents/Github/projekt/corne-keyboard-build/cad/")
+			(outputdirectory "../kicad result/left/")
 		)
 	)
 	(net 0 "")
@@ -286,7 +286,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -544,7 +544,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -616,7 +616,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -726,6 +726,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -890,7 +912,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -1148,7 +1170,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -1220,7 +1242,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -1330,6 +1352,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -1494,7 +1538,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -1752,7 +1796,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -1824,7 +1868,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -1934,6 +1978,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -2098,7 +2164,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -2356,7 +2422,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -2428,7 +2494,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -2538,6 +2604,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -3020,7 +3108,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -3278,7 +3366,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -3350,7 +3438,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -3460,6 +3548,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -3624,7 +3734,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -3882,7 +3992,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -3954,7 +4064,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -4064,6 +4174,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -4228,7 +4360,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -4486,7 +4618,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -4558,7 +4690,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -4668,6 +4800,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -5468,7 +5622,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -5726,7 +5880,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -5798,7 +5952,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -5908,6 +6062,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -6708,7 +6884,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -6966,7 +7142,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -7038,7 +7214,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -7148,6 +7324,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -7630,7 +7828,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -7888,7 +8086,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -7960,7 +8158,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -8070,6 +8268,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -8234,7 +8454,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -8492,7 +8712,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -8564,7 +8784,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -8674,6 +8894,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -9474,7 +9716,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -9732,7 +9974,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -9804,7 +10046,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -9914,6 +10156,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -10078,7 +10342,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -10336,7 +10600,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -10408,7 +10672,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -10518,6 +10782,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -10682,7 +10968,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -10940,7 +11226,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -11012,7 +11298,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -11122,6 +11408,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -11286,7 +11594,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -11544,7 +11852,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -11616,7 +11924,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -11726,6 +12034,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.7 2.7 1.8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -11890,7 +12220,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -12148,7 +12478,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -12220,7 +12550,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -12330,6 +12660,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -12812,7 +13164,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -13070,7 +13422,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -13142,7 +13494,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -13252,6 +13604,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -13734,7 +14108,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -13992,7 +14366,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -14064,7 +14438,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -14174,6 +14548,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -14780,6 +15176,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -16534,7 +16952,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164432)
+			(mid 5.499386 -6.164431)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -16794,7 +17212,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164432)
+			(mid 5.499386 -6.164431)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -16866,7 +17284,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164432)
+			(mid 5.499386 -6.164431)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -16976,6 +17394,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -18412,7 +18852,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.15)
@@ -18670,7 +19110,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -18742,7 +19182,7 @@
 		)
 		(fp_arc
 			(start 4.085176 -6.75022)
-			(mid 5.499389 -6.164434)
+			(mid 5.499392 -6.164435)
 			(end 6.085176 -4.75022)
 			(stroke
 				(width 0.05)
@@ -18852,6 +19292,28 @@
 			)
 			(rotate
 				(xyz 180 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Hotswap MX v22.step"
+			(offset
+				(xyz 0.5 2.7 2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/Kailh Polia.step"
+			(offset
+				(xyz 0 0 -6.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 90)
 			)
 		)
 	)
@@ -19946,6 +20408,17 @@
 			(pintype "passive")
 			(uuid "9238c3d4-bcfa-47e0-a419-c748e71c2e58")
 		)
+		(model "${KIPRJMOD}/Cad_models/Arduino Pro Micro USB Type C.step"
+			(offset
+				(xyz 9 14 2.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
 	)
 	(footprint "Connector_Audio:Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal"
 		(layer "B.Cu")
@@ -20321,6 +20794,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Cad_models/audio_3.5mm_trrs.step"
+			(offset
+				(xyz 5.5 -3 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
 			)
 		)
 	)

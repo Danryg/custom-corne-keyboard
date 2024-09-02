@@ -465,7 +465,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "C:/Users/Danie/Documents/Github/projekt/corne-keyboard-build/cad/",
+      "plot": "../kicad result/right/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "KeyboardTest2_right.step",

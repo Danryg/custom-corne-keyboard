@@ -465,10 +465,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "../../../../../../../../Program Files/KiCad/8.0/share/doc/kicad/tutorials/",
-      "plot": "C:/Users/Danie/Documents/Github/projekt/corne-keyboard-build/cad/",
+      "plot": "../kicad result/left/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "KeyboardTest2.step",
+      "step": "Fusion/KeyboardLeft.step",
       "svg": "",
       "vrml": ""
     },

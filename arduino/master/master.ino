@@ -1,11 +1,8 @@
 #include "Keyboard.h"
-#include <SoftwareSerial.h>
 
-#define TX_PIN 8  // Transmit pin connected to RX of the receiver
-#define RX_PIN 9  // Receive pin connected to TX of the receiver
 
-const int rowPins[2] = { 15, 5 };   // Rows connected to pins 16 and 5
-const int colPins[2] = { A0, 10 };  // Columns connected to pins 8 and 9
+const int rowPins[3] = {2, 9, 15 };   // Rows connected to pins 16 and 5
+const int colPins[6] = { 3, 4, 5, 6, 7, 8};  // Columns connected to pins 8 and 9
 
 
 
@@ -87,18 +84,23 @@ public:
   }
 };
 
-SoftwareSerial mySerial(TX_PIN, RX_PIN);
 // the setup function runs once when you press reset or power the board
 void setup() {
   Keyboard.begin();
-  mySerial.begin(57600);
 
+  Serial.begin(9600);
 
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 3; i++) {
     pinMode(rowPins[i], OUTPUT);
     digitalWrite(rowPins[i], HIGH);     // Disable all rows
+  }
+  for (int i = 0; i < 6; i++) {
     pinMode(colPins[i], INPUT_PULLUP);  // Enable pull-up resistors for columns
   }
+
+    pinMode(10, INPUT);  // Enable pull-up resistors for columns
+    pinMode(14, INPUT_PULLUP);  // Enable pull-up resistors for columns
+    pinMode(16, INPUT_PULLUP);  // Enable pull-up resistors for columns
   delay(1000);
 }
 
@@ -110,47 +112,61 @@ int incomingAdd = -1;
 // the loop function runs over and over again forever
 void loop() {
   ArrayList temp;
-  if (mySerial.available() > 0) {
-    //Read the incoming byte
-    char incomingByte = mySerial.read();
-    if (incomingAdd == -1) {
-      if (incomingByte == 'p') {
-        incomingAdd = 1;
-      } else if (incomingByte == 'r') {
-        incomingAdd = 0;
-      }
-    } else {
-      if (incomingAdd == 1) {
-        slave_pressed.add(incomingByte);
-      } else if (incomingAdd == 0) {
-        slave_pressed.remove(incomingByte);
-      }
-      incomingAdd = -1;
-    }
-  }
-
-
-
-
-  for (int row = 0; row < 2; row++) {
+  for (int row = 0; row < 3; row++) {
     digitalWrite(rowPins[row], LOW);  // Activate row
-    for (int col = 0; col < 2; col++) {
+    for (int col = 0; col < 6; col++) {
       if (digitalRead(colPins[col]) == LOW) {
         // Button at (row, col) is pressed
         // Add your code here to handle the button press
         if (row == 0 && col == 0) {
-          temp.add('e');
-        } else if (row == 1 && col == 0) {
           temp.add('a');
         } else if (row == 0 && col == 1) {
           temp.add('b');
-        } else if (row == 1 && col == 1) {
+        } else if (row == 0 && col == 2) {
           temp.add('c');
+        } else if (row == 0 && col == 3) {
+          temp.add('d');
+        } else if (row == 0 && col == 4) {
+          temp.add('e');
+        } else if (row == 0 && col == 5) {
+          temp.add('f');
+        } else if (row == 1 && col == 0) {
+          temp.add('g');
+        } else if (row == 1 && col == 1) {
+          temp.add('h');
+        } else if (row == 1 && col == 2) {
+          temp.add('i');
+        } else if (row == 1 && col == 3) {
+          temp.add('j');
+        } else if (row == 1 && col == 4) {
+          temp.add('k');
+        } else if (row == 1 && col == 5) {
+          temp.add('l');
+        } else if (row == 2 && col == 0) {
+          temp.add('m');
+        } else if (row == 2 && col == 1) {
+          temp.add('n');
+        } else if (row == 2 && col == 2) {
+          temp.add('o');
+        } else if (row == 2 && col == 3) {
+          temp.add('p');
+        } else if (row == 2 && col == 4) {
+          temp.add('q');
+        } else if (row == 2 && col == 5) {
+          temp.add('r');
         }
+
       }
     }
     digitalWrite(rowPins[row], HIGH);  // Deactivate row
   }
+
+  if(digitalRead(10) == HIGH){
+    Serial.println(1);
+  } else {
+    Serial.println(0);
+  }
+
 
   for (int i = 0; i < slave_pressed.size(); i++) {
     temp.add(slave_pressed.get(i));
