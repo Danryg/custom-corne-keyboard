@@ -1,10 +1,11 @@
+
 #include "Keyboard.h"
 #include <SoftwareSerial.h>
 
 
-const int rowPins[3] = {2, 9, 15 };   // Rows connected to pins 16 and 5
-const int colPins[6] = { 3, 4, 5, 6, 7, 8};  // Columns connected to pins 8 and 9
-SoftwareSerial mySerial(A3, A2);
+const int rowPins[3] = {A3, 10, 9 };   // Rows connected to pins 16 and 5
+const int colPins[6] = { A0, A1, 15, A2, 14, 16};  // Columns connected to pins 8 and 9
+SoftwareSerial mySerial(2, 3);
 
 
 class ArrayList {
@@ -89,7 +90,7 @@ public:
 void setup() {
   Keyboard.begin();
 
-  Serial.begin(9600);
+  Serial.begin(9600); 
   mySerial.begin(9600);
 
   for (int i = 0; i < 3; i++) {
@@ -100,9 +101,9 @@ void setup() {
     pinMode(colPins[i], INPUT_PULLUP);  // Enable pull-up resistors for columns
   }
 
-    pinMode(10, INPUT_PULLUP);  // Enable pull-up resistors for columns
-    pinMode(14, INPUT_PULLUP);  // Enable pull-up resistors for columns
-    pinMode(16, INPUT_PULLUP);  // Enable pull-up resistors for columns
+    pinMode(8, INPUT_PULLUP);  // Enable pull-up resistors for columns
+    pinMode(7, INPUT_PULLUP);  // Enable pull-up resistors for columns
+    pinMode(6, INPUT_PULLUP);  // Enable pull-up resistors for columns
   delay(1000);
 }
 
@@ -121,41 +122,41 @@ void loop() {
         // Button at (row, col) is pressed
         // Add your code here to handle the button press
         if (row == 0 && col == 0) {
-          temp.add('t');
+          temp.add('y');
         } else if (row == 0 && col == 1) {
-          temp.add('r');
+          temp.add('u');
         } else if (row == 0 && col == 2) {
-          temp.add('e');
+          temp.add('i');
         } else if (row == 0 && col == 3) {
-          temp.add('w');
+          temp.add('o');
         } else if (row == 0 && col == 4) {
-          temp.add('q');
+          temp.add('p');
         } else if (row == 0 && col == 5) {
-          temp.add(KEY_TAB);
+          temp.add('[');
         } else if (row == 1 && col == 0) {
-          temp.add('g');
+          temp.add('h');
         } else if (row == 1 && col == 1) {
-          temp.add('f');
+          temp.add('j');
         } else if (row == 1 && col == 2) {
-          temp.add('d');
+          temp.add('k');
         } else if (row == 1 && col == 3) {
-          temp.add('s');
+          temp.add('l');
         } else if (row == 1 && col == 4) {
-          temp.add('a');
+          temp.add(';');
         } else if (row == 1 && col == 5) {
-          temp.add(KEY_ESC);
+          temp.add('\'');
         } else if (row == 2 && col == 0) {
-          temp.add('b');
+          temp.add('n');
         } else if (row == 2 && col == 1) {
-          temp.add('v');
+          temp.add('m');
         } else if (row == 2 && col == 2) {
-          temp.add('c');
+          temp.add(',');
         } else if (row == 2 && col == 3) {
-          temp.add('x');
+          temp.add('.');
         } else if (row == 2 && col == 4) {
-          temp.add('z');
+          temp.add(0x2B);
         } else if (row == 2 && col == 5) {
-          temp.add(KEY_LEFT_SHIFT);
+          temp.add(KEY_RIGHT_SHIFT);
         }
 
       }
@@ -163,36 +164,23 @@ void loop() {
     digitalWrite(rowPins[row], HIGH);  // Deactivate row
   }
 
-  if(digitalRead(10) == LOW){
 
-    temp.add(' ');
-  }
 
-  if(digitalRead(14) == LOW){
-
-    temp.add(KEY_LEFT_ALT);
-  }
-
-  if(digitalRead(16) == LOW){
-  }
   for (int i = 0; i < slave_pressed.size(); i++) {
     temp.add(slave_pressed.get(i));
   }
 
   ArrayList compres = temp.compareAndReturnNew(pressed);
   for (int i = 0; i < compres.size(); i++) {
-    pressed.add(compres.get(i));
     Keyboard.press(compres.get(i));
-
+    pressed.add(compres.get(i));
   }
 
   ArrayList compres2 = pressed.compareAndReturnNew(temp);
 
   for (int i = 0; i < compres2.size(); i++) {
-    pressed.remove(compres2.get(i));
     Keyboard.release(compres2.get(i));
+    pressed.remove(compres2.get(i));
   }
-
-
   delay(10);
 }
