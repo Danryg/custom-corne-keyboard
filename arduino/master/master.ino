@@ -6,6 +6,16 @@ const int rowPins[3] = {2, 9, 15 };   // Rows connected to pins 16 and 5
 const int colPins[6] = { 3, 4, 5, 6, 7, 8};  // Columns connected to pins 8 and 9
 SoftwareSerial mySerial(A3, A2);
 
+char array[3][6] = {
+    {'t', 'r', 'e', 'w', 'q', KEY_TAB},
+    {'g', 'f', 'd', 's', 'a', KEY_ESC},
+    {'b', 'v', 'c', 'x', 'z', KEY_LEFT_SHIFT}
+};
+char layer_2[3][6] = {
+    {'5', '4', '3', '2', '1', KEY_TAB},
+    {'0', '9', '8', '7', '6', KEY_LEFT_GUI},
+    {'b', 'v', 'c', 'x', 'z', KEY_LEFT_CTRL}
+};
 
 class ArrayList {
 private:
@@ -120,44 +130,12 @@ void loop() {
       if (digitalRead(colPins[col]) == LOW) {
         // Button at (row, col) is pressed
         // Add your code here to handle the button press
-        if (row == 0 && col == 0) {
-          temp.add('t');
-        } else if (row == 0 && col == 1) {
-          temp.add('r');
-        } else if (row == 0 && col == 2) {
-          temp.add('e');
-        } else if (row == 0 && col == 3) {
-          temp.add('w');
-        } else if (row == 0 && col == 4) {
-          temp.add('q');
-        } else if (row == 0 && col == 5) {
-          temp.add(KEY_TAB);
-        } else if (row == 1 && col == 0) {
-          temp.add('g');
-        } else if (row == 1 && col == 1) {
-          temp.add('f');
-        } else if (row == 1 && col == 2) {
-          temp.add('d');
-        } else if (row == 1 && col == 3) {
-          temp.add('s');
-        } else if (row == 1 && col == 4) {
-          temp.add('a');
-        } else if (row == 1 && col == 5) {
-          temp.add(KEY_ESC);
-        } else if (row == 2 && col == 0) {
-          temp.add('b');
-        } else if (row == 2 && col == 1) {
-          temp.add('v');
-        } else if (row == 2 && col == 2) {
-          temp.add('c');
-        } else if (row == 2 && col == 3) {
-          temp.add('x');
-        } else if (row == 2 && col == 4) {
-          temp.add('z');
-        } else if (row == 2 && col == 5) {
-          temp.add(KEY_LEFT_SHIFT);
-        }
 
+        if(digitalRead(16) == LOW){
+          temp.add(layer_2[row][col]);
+        } else {
+          temp.add(array[row][col]);
+        }
       }
     }
     digitalWrite(rowPins[row], HIGH);  // Deactivate row
@@ -173,24 +151,22 @@ void loop() {
     temp.add(KEY_LEFT_ALT);
   }
 
-  if(digitalRead(16) == LOW){
-  }
   for (int i = 0; i < slave_pressed.size(); i++) {
     temp.add(slave_pressed.get(i));
   }
 
   ArrayList compres = temp.compareAndReturnNew(pressed);
   for (int i = 0; i < compres.size(); i++) {
-    pressed.add(compres.get(i));
     Keyboard.press(compres.get(i));
+    pressed.add(compres.get(i));
 
   }
 
   ArrayList compres2 = pressed.compareAndReturnNew(temp);
 
   for (int i = 0; i < compres2.size(); i++) {
-    pressed.remove(compres2.get(i));
     Keyboard.release(compres2.get(i));
+    pressed.remove(compres2.get(i));
   }
 
 

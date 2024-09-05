@@ -6,7 +6,22 @@
 const int rowPins[3] = {A3, 10, 9 };   // Rows connected to pins 16 and 5
 const int colPins[6] = { A0, A1, 15, A2, 14, 16};  // Columns connected to pins 8 and 9
 SoftwareSerial mySerial(2, 3);
+char keys_array_1[3][6] = {
+    {'y', 'u', 'i', 'o', 'p', '['},
+    {'h', 'j', 'k', 'l', ';', '\''},
+    {'n', 'm', ',', '.', '/', KEY_RIGHT_SHIFT}
+};
 
+char keys_array_2[3][6] = {
+    {'^', '^', '*', '(', ')', '\\'},
+    {'-', '=', '`', '[', ']', '|'},
+    {'_', '+', '~', '{', '}', '?'}
+};
+// ^ -> &
+// * -> (
+// ( -> )
+// ) -> =
+// 
 
 class ArrayList {
 private:
@@ -121,45 +136,22 @@ void loop() {
       if (digitalRead(colPins[col]) == LOW) {
         // Button at (row, col) is pressed
         // Add your code here to handle the button press
-        if (row == 0 && col == 0) {
-          temp.add('y');
-        } else if (row == 0 && col == 1) {
-          temp.add('u');
-        } else if (row == 0 && col == 2) {
-          temp.add('i');
-        } else if (row == 0 && col == 3) {
-          temp.add('o');
-        } else if (row == 0 && col == 4) {
-          temp.add('p');
-        } else if (row == 0 && col == 5) {
-          temp.add('[');
-        } else if (row == 1 && col == 0) {
-          temp.add('h');
-        } else if (row == 1 && col == 1) {
-          temp.add('j');
-        } else if (row == 1 && col == 2) {
-          temp.add('k');
-        } else if (row == 1 && col == 3) {
-          temp.add('l');
-        } else if (row == 1 && col == 4) {
-          temp.add(';');
-        } else if (row == 1 && col == 5) {
-          temp.add('\'');
-        } else if (row == 2 && col == 0) {
-          temp.add('n');
-        } else if (row == 2 && col == 1) {
-          temp.add('m');
-        } else if (row == 2 && col == 2) {
-          temp.add(',');
-        } else if (row == 2 && col == 3) {
-          temp.add('.');
-        } else if (row == 2 && col == 4) {
-          temp.add(0x2B);
-        } else if (row == 2 && col == 5) {
-          temp.add(KEY_RIGHT_SHIFT);
+        if(digitalRead(7) == LOW){
+          temp.add(keys_array_2[row][col]);
+        }else{
+        temp.add(keys_array_1[row][col]);
         }
 
       }
+    }
+
+    if(digitalRead(8) == LOW){
+      temp.add(' ');
+    }
+    if(digitalRead(7) == LOW){
+    }
+    if(digitalRead(6) == LOW){
+      temp.add(KEY_BACKSPACE);
     }
     digitalWrite(rowPins[row], HIGH);  // Deactivate row
   }
