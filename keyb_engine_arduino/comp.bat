@@ -21,7 +21,7 @@ set PORT=%1
 cd %SKETCH_DIR%
 
 REM Compile the sketch
-arduino-cli compile --fqbn %BOARD_FQBN% %SKETCH_NAME%.ino
+arduino-cli compile --fqbn %BOARD_FQBN% %SKETCH_NAME%
 
 REM Check if the compile step was successful
 if %ERRORLEVEL% neq 0 (
@@ -30,7 +30,7 @@ if %ERRORLEVEL% neq 0 (
 )
 
 REM Upload the sketch
-arduino-cli upload -p %PORT% --fqbn %BOARD_FQBN% %SKETCH_NAME%.ino
+arduino-cli upload -p %PORT% --fqbn %BOARD_FQBN% %SKETCH_NAME%
 
 REM Check if the upload step was successful
 if %ERRORLEVEL% neq 0 (

@@ -468,7 +468,7 @@
       "plot": "../kicad result/right/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "KeyboardTest2_right.step",
+      "step": "RightKeyStep/KeyboardTest2_right.step",
       "svg": "",
       "vrml": ""
     },
